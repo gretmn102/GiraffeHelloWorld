@@ -1,0 +1,16 @@
+storage: none
+source https://api.nuget.org/v3/index.json
+
+framework: net6.0
+nuget Giraffe
+nuget Giraffe.ViewEngine
+
+group Build
+    source https://api.nuget.org/v3/index.json
+    framework: net6.0
+    storage: none
+
+    nuget FSharp.Core
+    nuget Fake.Core.Trace
+    nuget Fake.Core.Target
+    nuget Fake.DotNet.Cli
