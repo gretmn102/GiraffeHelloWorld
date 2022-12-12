@@ -93,7 +93,7 @@ Target.create "RunTests" (fun _ ->
 )
 
 let deploy () =
-    let runtimeOption = if Environment.isUnix then "--runtime linux-x64" else ""
+    let runtimeOption = if Environment.isUnix then "--runtime linux-x64 --no-self-contained" else ""
     dotnet (sprintf "publish -c Release -o \"%s\" %s" deployDir runtimeOption) mainProjDir
 
 Target.create "Deploy" (fun _ -> deploy())
