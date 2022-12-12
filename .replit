@@ -1,4 +1,4 @@
-run = "sh ./build.sh && cd ./deploy && ./fishing-discord-bot"
+run = "sh ./build.sh && cd ./deploy && ./GiraffeHelloWorld"
 
 hidden = ["bin", "obj"]
 
